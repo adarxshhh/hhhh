@@ -2145,4 +2145,661 @@
                         <input type="tel" id="inquiry-phone" name="Phone" placeholder="+91 XXXXX XXXXX">
                     </div>
                     <div class="form-group">
-                        <
+                        <label for="inquiry-subject"><i class="fa-solid fa-tag"></i> Inquiry Subject</label>
+                        <input type="text" id="inquiry-subject" name="Subject" placeholder="e.g. Business Analytics Project / Role" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inquiry-message"><i class="fa-solid fa-comment-dots"></i> Message & Requirements *</label>
+                    <textarea id="inquiry-message" name="Message" placeholder="Write your message or inquiry details here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-query" id="submit-inquiry-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Inquiry to Sheet
+                </button>
+
+                <div class="form-status-msg" id="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Resume Modal Viewer -->
+    <div class="resume-modal" id="resume-modal" onclick="closeModalOnBackdrop(event)">
+        <div class="resume-modal-wrapper" id="resume-content-container">
+            <div class="resume-modal-header">
+                <h3><i class="fa-solid fa-file-invoice"></i> Verified Curriculum Vitae</h3>
+                <div class="resume-actions-top">
+                    <a href="Adarsh_Banshpal_FlowCV.pdf" download="Adarsh_Banshpal_Resume.pdf" class="btn-modal-action btn-modal-download" title="Download PDF File">
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <button class="btn-close-modal" onclick="closeResumeModal()" title="Close">&times;</button>
+                </div>
+            </div>
+
+            <div class="resume-modal-body" id="printable-resume">
+                <div class="resume-doc-header">
+                    <h1>Adarsh Banshpal</h1>
+                    <div class="doc-role">Business Analyst</div>
+                    <div class="resume-contact-bar">
+                        <a href="mailto:adarsh.banshpal@gmail.com"><i class="fa-solid fa-envelope"></i> adarsh.banshpal@gmail.com</a>
+                        <a href="tel:+919111531812"><i class="fa-solid fa-phone"></i> +91 911 153 1812</a>
+                        <span><i class="fa-solid fa-location-dot"></i> Jabalpur, India</span>
+                        <a href="https://linkedin.com/in/adarshbanshpal" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/adarshbanshpal</a>
+                        <a href="https://adarxshhh.github.io/Adarsh-Banshpal-Portfolio" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> adarxshhh.github.io/Adarsh-Banshpal-Portfolio</a>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-user"></i> Professional Profile</div>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        Analytical and detail-oriented MBA candidate specializing in Business Analytics, backed by a strong foundation in Mechanical Engineering. Proficient in leveraging SQL, Python, Power BI, and advanced Excel to translate complex data into actionable business strategies. Combines quantitative engineering problem-solving with experience in client acquisition and campaign performance metrics to drive cross-functional efficiency.
+                    </p>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-code"></i> Core Competencies & Skills</div>
+                    <div class="resume-skills-block">
+                        <div>
+                            <strong>Technical Skills:</strong>
+                            <p style="color: var(--text-secondary); margin-top: 0.2rem;">SQL, Python (NumPy, Pandas, Matplotlib), Power BI, Advanced Excel.</p>
+                        </div>
+                        <div>
+                            <strong>Design & Media Tools:</strong>
+                            <p style="color: var(--text-secondary); margin-top: 0.2rem;">Adobe Creative Suite, Google Ads, Prompt Engineering, SolidWorks CAD.</p>
+                        </div>
+                        <div>
+                            <strong>Interpersonal Competencies:</strong>
+                            <p style="color: var(--text-secondary); margin-top: 0.2rem;">Creativity, Leadership, Problem Identification & Solving, Adaptability, Team Work, Active Listening.</p>
+                        </div>
+                        <div>
+                            <strong>Languages:</strong>
+                            <p style="color: var(--text-secondary); margin-top: 0.2rem;">English, Hindi (Full Professional Proficiency).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</div>
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Digital Marketing Intern</span>
+                            <span class="dates">12/2025 – 02/2026</span>
+                        </div>
+                        <div class="resume-item-sub">Pitambara Physio Care Rehab, Jabalpur</div>
+                        <ul>
+                            <li>Authored a comprehensive study on social media marketing effectiveness to improve digital outreach strategies and client acquisition.</li>
+                            <li>Designed targeted questionnaires to accurately measure campaign engagement and overall digital performance.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Digital Media Co-ordinator (Internship)</span>
+                            <span class="dates">12/2025 – 02/2026</span>
+                        </div>
+                        <div class="resume-item-sub">Padma Advertising</div>
+                        <ul>
+                            <li>Coordinated digital media operations and assisted in managing advertising initiatives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>MBA in Business Analytics</span>
+                            <span class="dates">2024 – 2026</span>
+                        </div>
+                        <div class="resume-item-sub">Gyan Ganga Institute of Technology and Sciences, Jabalpur (Current CGPA: 70%)</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>B.Tech in Mechanical Engineering</span>
+                            <span class="dates">2021 – 2024</span>
+                        </div>
+                        <div class="resume-item-sub">Rajiv Gandhi Proudyogiki Vishwavidyalaya, Jabalpur (CGPA: 74.7%)</div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Diploma in Mechanical Engineering</span>
+                            <span class="dates">2018 – 2021</span>
+                        </div>
+                        <div class="resume-item-sub">Rajiv Gandhi Proudyogiki Vishwavidyalaya, Jabalpur (CGPA: 77.6%)</div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-diagram-project"></i> Key Projects</div>
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Interactive Web Portfolio</span>
+                            <span class="dates">Client Projects</span>
+                        </div>
+                        <ul>
+                            <li>Developed custom, interactive HTML portfolio websites for customers based on branding and business requirements.</li>
+                            <li>Designed responsive web pages to showcase multimedia content, services, and digital experiences.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Operational & Sales Visualization</span>
+                            <span class="dates">Streamlit & Python</span>
+                        </div>
+                        <ul>
+                            <li>Developed interactive dashboards to transform raw Excel and SQL data into actionable business visualizations.</li>
+                            <li>Built visualizations for supply chain tracking, revenue analysis, and customer segmentation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-top">
+                            <span>Analytics Dashboard</span>
+                            <span class="dates">Power BI & DAX</span>
+                        </div>
+                        <ul>
+                            <li>Developed a Power BI dashboard to analyze viewer engagement, retention, watch time, and subscriber growth for Pitambara Physio Care & Rehab.</li>
+                            <li>Created interactive charts, KPI cards, and trend visualizations to identify patterns in audience behavior.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <div class="resume-section-title"><i class="fa-solid fa-award"></i> Certifications</div>
+                    <ul>
+                        <li><strong>Artificial Intelligence Job Simulation:</strong> Cognizant (Forage) – Machine Learning, Model Building, QA & Data Modeling.</li>
+                        <li><strong>Digital Marketing:</strong> MSME Certified.</li>
+                        <li><strong>Elements of CAD & SolidWorks:</strong> Engineering Design and 3D Modeling.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Adarsh Banshpal. Built with precision, data & code. Jabalpur, India.</p>
+        <div class="footer-visitor-pill">
+            <i class="fa-solid fa-signal" style="color: var(--emerald);"></i>
+            <span>Visitor Count: <strong id="footer-visitor-count">1,265</strong></span>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // --- 1. Velocity-Aware 120Hz Lenis Setup ---
+        let currentVelocity = 0;
+        let lenis = null;
+
+        if (typeof Lenis !== 'undefined') {
+            lenis = new Lenis({
+                duration: 1.15,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: 'vertical',
+                gestureDirection: 'vertical',
+                smooth: true,
+                smoothTouch: false,
+                touchMultiplier: 1.4
+            });
+
+            lenis.on('scroll', (e) => {
+                currentVelocity = Math.abs(e.velocity || 0);
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        }
+
+        // --- 2. Top Scroll Progress & Active Nav ---
+        const progressBar = document.getElementById('scroll-progress');
+        const navLinksList = document.querySelectorAll('.nav-links a[href^="#"]');
+        const sectionsList = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', () => {
+            const top = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            if (progressBar) progressBar.style.width = ((top / height) * 100) + '%';
+
+            let cur = '';
+            sectionsList.forEach(s => {
+                if (top >= s.offsetTop - 140) cur = s.getAttribute('id');
+            });
+            navLinksList.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === '#' + cur) a.classList.add('active');
+            });
+        }, { passive: true });
+
+        // --- 3. 120Hz Ambient Halo Follower ---
+        const cursorHalo = document.getElementById('cursor-glow');
+        let targetX = window.innerWidth / 2, targetY = window.innerHeight / 2;
+        let haloX = targetX, haloY = targetY;
+
+        window.addEventListener('mousemove', (e) => {
+            targetX = e.clientX;
+            targetY = e.clientY;
+        }, { passive: true });
+
+        function animateHalo() {
+            if (cursorHalo && window.innerWidth > 860) {
+                haloX += (targetX - haloX) * 0.12;
+                haloY += (targetY - haloY) * 0.12;
+                const dynamicScale = 1 + Math.min(currentVelocity * 0.05, 0.4);
+                cursorHalo.style.transform = `translate(-50%, -50%) scale(${dynamicScale})`;
+                cursorHalo.style.left = haloX + 'px';
+                cursorHalo.style.top = haloY + 'px';
+            }
+            requestAnimationFrame(animateHalo);
+        }
+        requestAnimationFrame(animateHalo);
+
+        // --- 4. Scrollytelling Stage Controller & SVG Layer Morphing ---
+        const chapterSteps = document.querySelectorAll('.scrolly-card-step');
+        const spineFill = document.getElementById('spine-fill');
+        const theaterBadge = document.getElementById('theater-badge');
+        const stat1 = document.getElementById('hud-stat-1');
+        const lbl1 = document.getElementById('hud-lbl-1');
+        const stat2 = document.getElementById('hud-stat-2');
+        const lbl2 = document.getElementById('hud-lbl-2');
+
+        const layers = {
+            "1": document.getElementById('layer-cad'),
+            "2": document.getElementById('layer-data'),
+            "3": document.getElementById('layer-analytics'),
+            "4": document.getElementById('layer-cloud')
+        };
+
+        const chapterData = {
+            "1": {
+                badge: '<i class="fa-solid fa-compass-drafting"></i> CHAPTER 01 ACTIVE',
+                s1: '74.7%', l1: 'B.Tech CGPA',
+                s2: 'CAD / R&D', l2: 'Core Discipline'
+            },
+            "2": {
+                badge: '<i class="fa-solid fa-database"></i> CHAPTER 02 ACTIVE',
+                s1: '70.0%', l1: 'MBA Current CGPA',
+                s2: 'SQL & Python', l2: 'Data Modeling'
+            },
+            "3": {
+                badge: '<i class="fa-solid fa-chart-line"></i> CHAPTER 03 ACTIVE',
+                s1: 'Power BI', l1: 'Retention Suite',
+                s2: '+34%', l2: 'Audience Lift'
+            },
+            "4": {
+                badge: '<i class="fa-solid fa-cloud-arrow-up"></i> CHAPTER 04 ACTIVE',
+                s1: '4+ Apps', l1: 'Live Cloud Apps',
+                s2: '120Hz', l2: 'Render Sync'
+            }
+        };
+
+        const scrollyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    chapterSteps.forEach(s => s.classList.remove('active'));
+                    entry.target.classList.add('active');
+
+                    const ch = entry.target.getAttribute('data-chapter');
+                    const d = chapterData[ch];
+
+                    // Morph active layer
+                    Object.keys(layers).forEach(k => {
+                        if (layers[k]) layers[k].classList.remove('active');
+                    });
+                    if (layers[ch]) layers[ch].classList.add('active');
+
+                    // Update HUD status
+                    if (d) {
+                        theaterBadge.innerHTML = d.badge;
+                        stat1.textContent = d.s1;
+                        lbl1.textContent = d.l1;
+                        stat2.textContent = d.s2;
+                        lbl2.textContent = d.l2;
+                    }
+
+                    // Update Spine Fill
+                    const percent = ((parseInt(ch, 10) - 1) / (chapterSteps.length - 1)) * 100;
+                    if (spineFill) spineFill.style.height = percent + '%';
+                }
+            });
+        }, {
+            threshold: 0.55,
+            rootMargin: '0px 0px -15% 0px'
+        });
+
+        chapterSteps.forEach(step => scrollyObserver.observe(step));
+
+        // --- 5. 3D Card Tilt + Real-Time Specular Spotlight Shader ---
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectCards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', x + 'px');
+                card.style.setProperty('--mouse-y', y + 'px');
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotX = ((y - centerY) / centerY) * -7;
+                const rotY = ((x - centerX) / centerX) * 7;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+            });
+        });
+
+        // --- 6. Visitor Counter ---
+        (function initVisitorCounter() {
+            const BASE_VISITORS = 1265;
+            let visitCount = parseInt(localStorage.getItem("adarsh_portfolio_visits") || "0", 10);
+            visitCount += 1;
+            localStorage.setItem("adarsh_portfolio_visits", visitCount);
+
+            const totalVisitors = BASE_VISITORS + (visitCount - 1);
+
+            function animateCounter(el, start, end, duration) {
+                if (!el) return;
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    const currentVal = Math.floor(progress * (end - start) + start);
+                    el.textContent = currentVal.toLocaleString();
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        el.textContent = end.toLocaleString();
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const bannerCounter = document.getElementById("visitor-count");
+                const footerCounter = document.getElementById("footer-visitor-count");
+                const startAnimVal = Math.max(0, totalVisitors - 35);
+                animateCounter(bannerCounter, startAnimVal, totalVisitors, 1400);
+                if (footerCounter) footerCounter.textContent = totalVisitors.toLocaleString();
+            });
+        })();
+
+        // --- 7. Google Sheets Form Submission ---
+        const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxKZ8zuigIDfhdGpS7xuSDTyFqLog8rnwMHbXskp5y-SCiuLTYMCRZWmLSRr67LG8m2Qg/exec";
+        const inquiryForm = document.getElementById("google-sheets-inquiry-form");
+        const submitBtn = document.getElementById("submit-inquiry-btn");
+        const statusMsg = document.getElementById("form-status");
+
+        inquiryForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Recording to Sheet...';
+            statusMsg.className = "form-status-msg";
+            statusMsg.style.display = "none";
+
+            const formData = new FormData(inquiryForm);
+            formData.append("Timestamp", new Date().toLocaleString());
+            formData.append("Sheet_ID", "1v_CkapvCDoFysh2kClvixe1yHs9KJwP9LjvLwA96zAM");
+
+            try {
+                if (GOOGLE_SCRIPT_WEB_APP_URL.includes("YOUR_DEPLOYED_APP_ID")) {
+                    const name = formData.get("Name");
+                    const email = formData.get("Email");
+                    const phone = formData.get("Phone") || "N/A";
+                    const subject = formData.get("Subject");
+                    const message = formData.get("Message");
+
+                    const mailtoLink = `mailto:adarsh.banshpal@gmail.com?subject=${encodeURIComponent("[Inquiry] " + subject)}&body=${encodeURIComponent(
+                        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}\n\n(Logged for Sheet: 1v_CkapvCDoFysh2kClvixe1yHs9KJwP9LjvLwA96zAM)`
+                    )}`;
+                    window.location.href = mailtoLink;
+                    statusMsg.className = "form-status-msg success";
+                    statusMsg.innerHTML = '<i class="fa-solid fa-check-circle"></i> Opening direct mail dispatcher.';
+                    inquiryForm.reset();
+                } else {
+                    await fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
+                        method: "POST",
+                        body: formData,
+                        mode: "no-cors"
+                    });
+                    statusMsg.className = "form-status-msg success";
+                    statusMsg.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your query has been recorded into Google Sheets.';
+                    inquiryForm.reset();
+                }
+            } catch (error) {
+                statusMsg.className = "form-status-msg error";
+                statusMsg.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Submission error. Please contact directly via WhatsApp or Email.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Inquiry to Sheet';
+            }
+        });
+
+        // --- 8. Resume Modal ---
+        function openResumeModal() {
+            const modal = document.getElementById("resume-modal");
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeResumeModal() {
+            const modal = document.getElementById("resume-modal");
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
+        }
+
+        function closeModalOnBackdrop(e) {
+            if (e.target.id === "resume-modal") closeResumeModal();
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeResumeModal();
+        });
+
+        // --- 9. Theme Toggle ---
+        const themeBtnDesktop = document.getElementById("theme-btn-desktop");
+        const themeBtnMobile = document.getElementById("theme-btn-mobile");
+
+        function updateThemeIcons(theme) {
+            const isLight = theme === "light";
+            const iconClass = isLight ? "fa-solid fa-sun" : "fa-solid fa-moon";
+            if (themeBtnDesktop) themeBtnDesktop.innerHTML = `<i class="${iconClass}"></i>`;
+            if (themeBtnMobile) themeBtnMobile.innerHTML = `<i class="${iconClass}"></i>`;
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "light" ? "dark" : "light";
+            if (newTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+            } else {
+                document.documentElement.removeAttribute("data-theme");
+            }
+            localStorage.setItem("portfolio-theme", newTheme);
+            updateThemeIcons(newTheme);
+        }
+
+        const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+        if (savedTheme === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+        updateThemeIcons(savedTheme);
+
+        if (themeBtnDesktop) themeBtnDesktop.addEventListener("click", toggleTheme);
+        if (themeBtnMobile) themeBtnMobile.addEventListener("click", toggleTheme);
+
+        // --- 10. Typewriter ---
+        const words = [
+            "MBA (Business Analytics) Specialist",
+            "Streamlit & Python Developer",
+            "Power BI & SQL Storyteller",
+            "Mechanical Engineering Background",
+            "Interactive Web Experience Builder"
+        ];
+        let wordIndex = 0, charIndex = 0, isDeleting = false;
+        const typewriterEl = document.getElementById("typewriter-text");
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 35 : 75;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 1900;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 400;
+            }
+            setTimeout(type, typeSpeed);
+        }
+        type();
+
+        // --- 11. Projects Filter ---
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const filterCards = document.querySelectorAll(".project-card");
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                const filter = btn.getAttribute("data-filter");
+                filterCards.forEach(card => {
+                    const category = card.getAttribute("data-category");
+                    if (filter === "all" || category === filter) {
+                        card.style.display = "flex";
+                        setTimeout(() => card.style.opacity = "1", 40);
+                    } else {
+                        card.style.opacity = "0";
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // --- 12. Mobile Menu ---
+        const menuBtn = document.getElementById("menu-btn");
+        const navLinks = document.getElementById("nav-links");
+        menuBtn.addEventListener("click", () => navLinks.classList.toggle("active"));
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) navLinks.classList.remove('active');
+            });
+        });
+
+        // --- 13. Dynamic Particle Canvas Engine ---
+        const canvas = document.getElementById("particle-canvas");
+        const ctx = canvas.getContext("2d");
+
+        let width = (canvas.width = window.innerWidth);
+        let height = (canvas.height = window.innerHeight);
+
+        window.addEventListener("resize", () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+
+        const particles = [];
+        const particleCount = Math.min(Math.floor(window.innerWidth / 18), 70);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.vx = (Math.random() - 0.5) * 0.7;
+                this.vy = (Math.random() - 0.5) * 0.7;
+                this.radius = Math.random() * 2 + 1;
+                this.isAltColor = Math.random() > 0.5;
+                this.alpha = Math.random() * 0.5 + 0.2;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                const dx = targetX - this.x;
+                const dy = targetY - this.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 100) {
+                    this.x -= (dx / dist) * 1.5;
+                    this.y -= (dy / dist) * 1.5;
+                }
+
+                if (this.x < 0 || this.x > width) this.vx *= -1;
+                if (this.y < 0 || this.y > height) this.vy *= -1;
+            }
+
+            draw() {
+                const isLight = document.documentElement.getAttribute("data-theme") === "light";
+                const baseColor = this.isAltColor
+                    ? (isLight ? "rgba(2, 132, 199, " : "rgba(0, 242, 254, ")
+                    : (isLight ? "rgba(124, 58, 237, " : "rgba(157, 78, 221, ");
+
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = baseColor + this.alpha + ")";
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function connectParticles() {
+            const isLight = document.documentElement.getAttribute("data-theme") === "light";
+            const lineColor = isLight ? "2, 132, 199" : "0, 242, 254";
+
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 125) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(${lineColor}, ${0.14 - dist / 950})`;
+                        ctx.lineWidth = 0.75;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            connectParticles();
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+    </script>
+</body>
+</html>
